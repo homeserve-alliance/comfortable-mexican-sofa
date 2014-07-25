@@ -16,19 +16,5 @@ class Cms::User < ActiveRecord::Base
   def site_tokens=(ids)
     self.site_ids = ids.split(',')
   end
-
-  before_save :ensure_authentication_token
-
-  def ensure_authentication_token
-    self.authentication_token ||= generate_authentication_token
-  end
-
-  private
-
-  def generate_authentication_token
-    loop do
-      token = Devise.friendly_token
-      break token unless Cms::User.where(authentication_token: token).first
-    end
-  end
 end
+
