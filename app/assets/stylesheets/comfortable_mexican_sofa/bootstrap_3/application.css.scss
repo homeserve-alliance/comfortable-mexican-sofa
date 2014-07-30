@@ -1,10 +1,6 @@
-//= require jquery.ui.all
-//= require codemirror
-//= require comfortable_mexican_sofa/lib/bootstrap
-//= require comfortable_mexican_sofa/lib/bootstrap-wysihtml5
-//= require comfortable_mexican_sofa/lib/bootstrap-datetimepicker
-//= require comfortable_mexican_sofa/lib/token-input-facebook
-//= require comfortable_mexican_sofa/bootstrap_overrides
-//= require comfortable_mexican_sofa/codemirror_overrides
-//= require comfortable_mexican_sofa/token-input-facebook_overrides
-//= require comfortable_mexican_sofa/base
+/*
+* Do not use //= require in Sass or your other stylesheets will not be able to
+* access the Bootstrap mixins or variables.
+*/
+// @import "bootstrap-sprockets";
+@import "bootstrap";
