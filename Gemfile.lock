@@ -47,6 +47,8 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 0.3.37)
     arel (4.0.2)
+    autoprefixer-rails (2.2.0.20140727)
+      execjs
     awesome_print (1.2.0)
     bcrypt (3.1.7)
     better_errors (1.1.0)
@@ -54,6 +56,8 @@ GEM
       erubis (>= 2.6.6)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
+    bootstrap-sass (3.2.0.1)
+      sass (~> 3.2)
     builder (3.1.4)
     cancancan (1.7.1)
     climate_control (0.0.3)
@@ -181,12 +185,15 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  autoprefixer-rails
   awesome_print
   better_errors
   binding_of_caller
+  bootstrap-sass (~> 3.2.0)
   comfortable_mexican_sofa!
   coveralls
   mocha
   pg
   quiet_assets
+  sass-rails (>= 3.2)
   spring

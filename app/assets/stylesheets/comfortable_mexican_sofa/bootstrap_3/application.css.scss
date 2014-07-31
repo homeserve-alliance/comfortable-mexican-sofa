@@ -1,0 +1,6 @@
+/*
+* Do not use //= require in Sass or your other stylesheets will not be able to
+* access the Bootstrap mixins or variables.
+*/
+// @import "bootstrap-sprockets";
+@import "bootstrap";

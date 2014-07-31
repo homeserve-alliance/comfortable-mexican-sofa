@@ -1,0 +1,6 @@
+%body#comfy{:class => "c-#{params[:controller].slugify} a-#{params[:action].slugify}"}
+
+  = render 'admin/cms/partials/body_before'
+
+  .body-wrapper
+    = render :partial => 'layouts/admin_bootstrap3/cms/center'

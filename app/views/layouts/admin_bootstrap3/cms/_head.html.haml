@@ -1,0 +1,14 @@
+%head
+  %meta{'http-equiv' => "Content-type", content: "text/html; charset=utf-8"}
+  %title= ComfortableMexicanSofa.config.cms_title
+  = csrf_meta_tag
+
+  = stylesheet_link_tag 'comfortable_mexican_sofa/admin/application'
+  = stylesheet_link_tag 'comfortable_mexican_sofa/bootstrap_3/application'
+  = stylesheet_link_tag 'comfortable_mexican_sofa/admin/bootstrap_3/application'
+  = javascript_include_tag 'comfortable_mexican_sofa/bootstrap_3/application'
+  = javascript_include_tag 'comfortable_mexican_sofa/admin/bootstrap_3/application'
+
+  = yield :head
+
+  = render 'admin/cms/partials/html_head'
