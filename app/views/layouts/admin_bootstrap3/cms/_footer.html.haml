@@ -1,8 +1,8 @@
 .body-footer
-  = link_to "Sign out", destroy_admin_cms_user_session_path, method: :delete
-  %br
-  = link_to 'ComfortableMexicanSofa', 'https://github.com/comfy', :target => '_blank'
-  %span.version= ComfortableMexicanSofa::VERSION
-  %span
-    Using
-    = link_to 'Bootstrap 3', 'http://getbootstrap.com/', target: '_blank'
+  = link_to "Sign out", destroy_admin_cms_user_session_path, method: :delete, class: 'btn btn-default btn-xs'
+  -# %small
+  -#   = link_to "ComfortableMexicanSofa #{ComfortableMexicanSofa::VERSION}", 'https://github.com/comfy', :target => '_blank'
+  -#   %br
+  -#   %span
+  -#     Using
+  -#     = link_to 'Twitter Bootstrap 3.2', 'http://getbootstrap.com/', target: '_blank'

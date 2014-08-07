@@ -1,6 +1,12 @@
-%body#comfy{:class => "c-#{params[:controller].slugify} a-#{params[:action].slugify}"}
+%body{class: controller_name + ' ' + action_name}
 
   = render 'admin/cms/partials/body_before'
 
-  .body-wrapper
-    = render :partial => 'layouts/admin_bootstrap3/cms/center'
+  .container-fluid
+    .row
+      .col-sm-3.col-md-2.sidebar
+        = render :partial => 'layouts/admin_bootstrap3/cms/sidebar'
+      .col-sm-9.col-sm-offset-3.col-md-10.col-md-offset-2.main
+        = render :partial => 'layouts/admin_bootstrap3/cms/center'
+
+  = render :partial => 'layouts/admin_bootstrap3/cms/footer_js'
